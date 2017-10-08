@@ -8,21 +8,22 @@
  *
  * @author tcchr
  */
-import java.util.HashMap;
 
+import java.util.HashMap;
 public class ApplicationController {
-    //the HashMap where 
-    private HashMap<String,Handler> handlerMap = new HashMap();
-    // this request takes a string and the HashMap, then passes 
-    public void handleRequest(String command,HashMap<String,Object> data){
-        Handler aCommandHandler = handlerMap.get(command);
-        if(aCommandHandler !=null){
-            aCommandHandler.handleIt(data);
+    //HashMap to store different handlers
+    static HashMap<String,Handler> handlerMap = new HashMap<String,Handler>();
+    
+    //handles requests by getting the correct handler from the HashMap
+    public static void handleRequest(String command, String name){
+        Handler handler = handlerMap.get(command);
+
+        if (handler != null){
+            handler.handleIt(name);
         }
     }
     
-    public void mapCommand(String aCommand, Handler acHandler){
-        handlerMap.put(aCommand, acHandler);
-    }
+    
+    
     
 }

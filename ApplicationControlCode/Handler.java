@@ -8,9 +8,9 @@
  *
  * @author tcchr
  */
-import java.util.HashMap;
 
  public interface Handler {
-        public void handleIt(HashMap<String, Object> data);
+     //just a template class, implemented in the actual handler
+        public void handleIt(String name);
     }
 
