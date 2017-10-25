@@ -19,12 +19,10 @@ public class HTTPUrlConnection {
            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
            
            //HTTP usage
-           //setting request type
+           //setting request type, mostly for show in the code since it defaults to GET
            connection.setRequestMethod("GET");
-           // request header
-           connection.setRequestProperty("User-Agent", USER_AGENT);
            
-           //using just the HTTP GET request
+           //using the HTTP GET request
            System.out.println("Sending GET request to " + url.toString());
            System.out.println("Response Code: " + connection.getResponseCode());
            
@@ -38,12 +36,14 @@ public class HTTPUrlConnection {
            while((inputString = in.readLine()) != null){
                System.out.println(inputString);
            }    
-                     
+           //disconnect the connection when the program is done
+           connection.disconnect();
            
        }catch(Exception e){
            //Print the exception if we have a bad URL
            System.out.println(e);
        }
+       
            
    } 
 }
