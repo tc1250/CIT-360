@@ -7,8 +7,6 @@ import java.io.*;
  */
 public class HTTPUrlConnection {
     
-    private final static String USER_AGENT = "Mozilla/5.0";
-    
    public static void main(String[] args){
        // Using try-catch to open HTTPUrlConnection in case of bad URL or no data returned
        //System.out.println("Testing");
