@@ -14,7 +14,7 @@ public class HTTPUrlConnection {
            URL url = new URL("https://www.lds.org");
            //Open the URL
            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-           //Use an IO stream to get data from the connection
+           //Use an IO stream to get data from the connection - InputStreamReader converts from bytes to characters, and BufferedReader converts from chars to strings
            BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
            
            String inputString;
