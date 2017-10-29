@@ -5,6 +5,7 @@
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
             <name>CIT 360</name>
             <source-roots>
+                <root id="src.Diagrams.dir"/>
                 <root id="src.AndroidHTTPUrlConnection.dir"/>
                 <root id="src.MVC.dir"/>
                 <root id="src.JavaCollections.dir"/>
