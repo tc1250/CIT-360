@@ -124,7 +124,7 @@ public class EchoServlet extends HttpServlet {
          out.println(".</p>");
  
          // Hyperlink "BACK" to input page
-         out.println("<a href='form_input.html'>BACK</a>");
+         out.println("<a href='form_input.html'>Go to form_input page</a>");
  
          out.println("</body></html>");
       } finally {
