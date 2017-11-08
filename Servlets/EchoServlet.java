@@ -81,17 +81,17 @@ public class EchoServlet extends HttpServlet {
             out.println("<p>Languages: ");
             for (String language : languages) {
                if (language.equals("C/C++")) {
-                  out.println("C/C++ ");
+                  out.println("C/C++ <br/>");
                } else if (language.equals("C#")) {
-                  out.println("C# ");
+                  out.println("C# <br/>");
                } else if (language.equals("PHP")) {
-                  out.println("PHP ");
+                  out.println("PHP <br/>");
                } else if (language.equals("MySQL")) {
-                  out.println("MySQL "); 
+                  out.println("MySQL <br/>"); 
                } else if (language.equals("JavaScript")) {
-                  out.println("JavaScript ");   
+                  out.println("JavaScript <br/>");   
                } else if(language.equals("Java")) {
-                  out.println("Java ");
+                  out.println("Java <br/>");
                }
             }
             out.println("</p>");
